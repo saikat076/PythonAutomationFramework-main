@@ -5,7 +5,7 @@ def run_behave():
     args = [
         '--tags', '@search',
         '--format',
-        'behave_html_formatter',
+        'behave_html_formatter:HTMLFormatter',
         '--out', 'features/reports/report.html',
         '--format', 'pretty',
         'features'
@@ -14,5 +14,5 @@ def run_behave():
     sys.argv = ['behave'] + args
     behave_main()
 
-if __name__ == "__main__":
+if __name__ == "_main_":
     run_behave()
